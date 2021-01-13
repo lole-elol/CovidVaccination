@@ -11,7 +11,7 @@ people = 83190556
 
 x = requests.get('https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Daten/Impfquotenmonitoring.xlsx?__blob=publicationFile',allow_redirects=True)
 open('covdata.xlsx', 'wb').write(x.content)
-a = open('test.fuckoff', 'w+')
+
 val = pd.read_excel('covdata.xlsx', sheet_name=2, usecols='B', skiprows=1, header=None)
 date = pd.read_excel('covdata.xlsx', sheet_name=2, usecols='A', skiprows=1, header=None)
 print(val)
