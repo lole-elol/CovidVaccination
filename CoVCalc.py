@@ -4,6 +4,8 @@ import numpy as np
 import requests
 import matplotlib.pyplot as plt
 
+
+# population of germany
 people = 83190556
 
 
@@ -38,5 +40,3 @@ plt.ylim(0, 0.01)
 plt.show()
 
 print("Days to 50%", 0.50/p[0])
-#print(df.T[].tolist())
-#print(datelist)
